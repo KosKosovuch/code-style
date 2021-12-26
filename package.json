@@ -1,0 +1,38 @@
+{
+  "name": "@epls/code-style",
+  "version": "1.0.0",
+  "description": "Code style",
+  "bin": "./init.sh",
+  "scripts": {
+    "postinstall": "npx simple-git-hooks",
+    "ct": "npx git-cz",
+    "ct-all": "git add . && npm run ct"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Kostya",
+    "email": "koskosovuch@icloud.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "lint-staged": "^12.1.4",
+    "simple-git-hooks": "^2.7.0",
+    "stylelint": "^14.1.0",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^24.0.0",
+    "vue-eslint-parser": "^8.0.1"
+  },
+  "devDependencies": {
+    "semantic-release": "^18.0.1"
+  }
+}
