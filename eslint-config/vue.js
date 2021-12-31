@@ -9,7 +9,7 @@ module.exports = {
         ecmaFeatures: { 'jsx': true }
       },
       extends: [
-        './.eslintrc-base',
+        require.resolve('./base'),
         'plugin:vue/recommended'
       ],
       rules: {

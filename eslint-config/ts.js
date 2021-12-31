@@ -5,7 +5,7 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       extends: [
-        './.eslintrc-base',
+        require.resolve('./base'),
         'plugin:@typescript-eslint/recommended'
       ],
       rules: {

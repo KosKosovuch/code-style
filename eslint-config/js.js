@@ -3,7 +3,7 @@ module.exports = {
     {
       files: '*.js',
       parser: '@babel/eslint-parser',
-      extends: './.eslintrc-base',
+      extends: require.resolve('./base'),
       parserOptions: {
         requireConfigFile: false,
       },
