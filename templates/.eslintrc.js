@@ -1,3 +1,3 @@
 module.exports = {
-  extends: '@epls/code-style/eslint-config/.eslintrc-combined'
+  extends: require.resolve('@epls/code-style/eslint-config/combined')
 }
