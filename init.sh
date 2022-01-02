@@ -5,7 +5,7 @@
 echo '⚙️ Installing dependencies...' &&
 npm i -D lint-staged@10 \ simple-git-hooks \ @epls/code-style@latest &&
 
-echo -n "💅 Stylelint (Y/n)?" &&
+echo -n "Stylelint (Y/n)?" &&
 read -r answerStylelint
 
 if [ "$answerStylelint" != "${answerStylelint#[Yy]}" ];
@@ -67,7 +67,7 @@ else
   cp "node_modules/@epls/code-style/templates/.lintstagedrc-no-stylelint" "./.lintstagedrc"
 fi
 
-echo -n "🚀 ESLint (Y/n)?" &&
+echo -n "ESLint (Y/n)?" &&
 read -r answer
 
 if [ "$answer" != "${answer#[Yy]}" ];
