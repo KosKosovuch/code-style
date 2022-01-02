@@ -5,8 +5,8 @@ module.exports = {
       parser: '@babel/eslint-parser',
       extends: require.resolve('./base'),
       parserOptions: {
-        requireConfigFile: false,
-      },
-    },
-  ],
-};
+        requireConfigFile: false
+      }
+    }
+  ]
+}

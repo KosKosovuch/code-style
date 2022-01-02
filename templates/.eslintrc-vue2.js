@@ -7,5 +7,5 @@ module.exports = {
     es6: true
   },
 
-  extends: require.resolve('@epls/code-style/eslint-config/js')
+  extends: require.resolve('@epls/code-style/eslint-config/vue2')
 }

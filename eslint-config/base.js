@@ -1,16 +1,11 @@
 module.exports = {
-  env: {
-    browser: true,
-    node: true,
-    es6: true
-  },
   extends: ['standard'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'import/prefer-default-export': 0,
-    'indent': ['error', 2],
-    'comma-dangle': ['error', 'never'],
+    'indent': [2, 2, { 'SwitchCase': 1 }],
+    'comma-dangle': [2, 'never'],
     'import/no-cycle': 'off',
     'semi': [2, 'never'],
     'quotes': [2, 'single'],
@@ -19,7 +14,7 @@ module.exports = {
       'always',
       { objectsInObjects: false }
     ],
-    'prefer-const': ['error', { 'destructuring': 'all' }],
+    'prefer-const': [2, { 'destructuring': 'all' }],
     'no-unused-expressions': 0,
     'no-trailing-spaces': 0,
     'no-multiple-empty-lines': ['error', { 'max': 2 }],

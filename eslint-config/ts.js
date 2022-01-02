@@ -9,13 +9,13 @@ module.exports = {
         'plugin:@typescript-eslint/recommended'
       ],
       rules: {
-        '@typescript-eslint/semi': ['error'],
-        '@typescript-eslint/indent': ['error', 2, { 'SwitchCase': 1 }],
-        '@typescript-eslint/type-annotation-spacing': ['error', {
+        '@typescript-eslint/semi': [2, 'never'],
+        '@typescript-eslint/indent': [2, 2, { 'SwitchCase': 1 }],
+        '@typescript-eslint/type-annotation-spacing': [2, {
           before: false,
           after: true
         }],
-        '@typescript-eslint/member-delimiter-style': ['error', {
+        '@typescript-eslint/member-delimiter-style': [2, {
           multiline: {
             delimiter: 'semi',
             requireLast: true
