@@ -1,6 +1,6 @@
 {
   "name": "@epls/code-style",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Code style ESLint, Stylelint",
   "bin": "./init.sh",
   "scripts": {
