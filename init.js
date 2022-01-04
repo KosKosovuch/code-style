@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 sh.echo('💿 Installing dependencies...');
-const deps = shell.exec('npm i -D lint-staged@10 simple-git-hooks @epls/code-style@latest', { async:true });
+const deps = sh.exec('npm i -D lint-staged@10 simple-git-hooks @epls/code-style@latest', { async:true });
 deps.stdout.on('data', depsCallback);
 
 function depsCallback() {
@@ -121,10 +121,10 @@ function depsCallback() {
 				// .simple-git-hooks
 				fs.copyFileSync(`${path}/.simple-git-hooks.js`, './.simple-git-hooks.js');
 				sh.echo('✅ .simple-git-hooks.js added');
-				shell.exec('git config core.hooksPath .git/hooks/ && rm -rf .git/hooks && npx simple-git-hooks');
+				sh.exec('git config core.hooksPath .git/hooks/ && rm -rf .git/hooks && npx simple-git-hooks');
 
 				// DONE
-				shell.echo('🍻️ Done! Please, check all old files if exists!');
+				sh.echo('🍻️ Done! Please, check all old files if exists!');
 			});
 		});
 }
