@@ -2,9 +2,8 @@
   "name": "@epls/code-style",
   "version": "1.2.3",
   "description": "Code style ESLint, Stylelint",
-  "bin": "./init.sh",
+  "bin": "./init.js",
   "scripts": {
-    "postinstall": "npx simple-git-hooks",
     "ct": "npx git-cz",
     "ct-all": "git add . && npm run ct"
   },
@@ -31,9 +30,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-vue": "^8.2.0",
-    "lint-staged": "^12.1.4",
+    "inquirer": "^8.2.0",
     "semantic-release": "^18.0.1",
-    "simple-git-hooks": "^2.7.0",
+    "shelljs": "^0.8.4",
     "stylelint": "^14.1.0",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^24.0.0",
